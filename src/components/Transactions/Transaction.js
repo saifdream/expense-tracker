@@ -33,10 +33,10 @@ export default function Transaction({ transaction }) {
                 else
                     queryStr = `${queryStr}&_limit=${limit}`;
 
-                dispatch(fetchTransactions(queryStr));
+                setTimeout(() => dispatch(fetchTransactions(queryStr)), 700);
             })
-            .finally(() => {
-                dispatch(fetchBalance());
+            .then(() => {
+                setTimeout(() => dispatch(fetchBalance()), 700);
             });
     };
 
