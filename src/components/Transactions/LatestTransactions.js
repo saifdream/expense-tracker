@@ -12,7 +12,7 @@ export default function LatestTransactions() {
     );
 
     useEffect(() => {
-        dispatch(fetchTransactions('?_sort=id&_order=desc&_limit=5'));
+        setTimeout(() => dispatch(fetchTransactions('?_sort=id&_order=desc&_limit=5')), 700);
     }, [dispatch]);
 
     // decide what to render

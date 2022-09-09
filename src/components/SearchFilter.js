@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import {fetchTransactions} from "../features/transaction/transactionSlice";
 import Form from "./Form";
 import {
     resetTransactionFilter,
